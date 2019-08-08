@@ -34,9 +34,9 @@ $group_popup = get_field('popup');
 
 ?>
 <div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
-    <?php if( $group_apply ): ?>
+    <?php if( $group_apply||$group_popup ): ?> <!-- If this block is registered -->
     
-    <?php if( get_field('template') == 'Block' ): ?>
+    <?php if( get_field('template') == 'Block' ): ?> <!-- If this template is block -->
 	
 	<div class="apply-visit-request block">
             <div class="page-frame">
@@ -73,9 +73,9 @@ $group_popup = get_field('popup');
                                     </div>
             </div>
         </div>
-        <?php endif; ?>
-	<?php if( get_field('template') == 'Popup' ): ?>
-	<?php if( $group_popup ): ?>
+        
+	<?php elseif( get_field('template') == 'Popup' ): ?> <!--If this template is popup -->
+
 	Modal
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -87,8 +87,8 @@ $group_popup = get_field('popup');
   </div>
 
 </div>
-	<?php endif; ?>
-	<?php endif; ?>
+	
+	<?php endif; ?><!--If this template is popup -->
 	<?php else: ?>
 		<p>Please add some content to the Apply, Visit, Request Block.</p>
 	<?php endif; ?>

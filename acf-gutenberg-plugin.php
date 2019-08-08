@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: ACF Gutenberg Blocks
- * Description: Blocks include: T3 Visits, Testimonial Slider, Masonry Gallary, Countdown Timer
+ * Description: Blocks include: T2 (Visit, Apply,Request), Testimonial Slider, Masonry Gallary, Countdown Timer
  * Author: Eli
  * Version: 1.0.0
  */
@@ -68,7 +68,6 @@ function my_acf_register_blocks() {
 				wp_enqueue_script( 'flipclock', 'https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.6.1/flipclock.min.js', array('jquery'), '1.8.1', true );
                 
 				wp_enqueue_style( 'block-flipclock', plugin_dir_url(__FILE__) . 'template-parts/blocks/countdown/countdown.css', array(), '1.0.0' );
-				//wp_enqueue_script( 'block-flipclock', plugin_dir_url(__FILE__) . '/template-parts/blocks/countdown/countdown.js', array(), '1.0.0', true );
 			  },
         ));
         
@@ -97,9 +96,8 @@ function my_acf_register_blocks() {
             'render_template'   => plugin_dir_path( __FILE__ ) . 'template-parts/blocks/t2-apply-visit-request/apply-visit-request.php',
 			'category'          => 'formatting',
 			'icon' 				=> 'smiley',
-			'align'				=> 'center',
-			'enqueue_assets' 	=> function(){
-                
+			'align'				=> 'wide',
+			'enqueue_assets' 	=> function(){                
 				wp_enqueue_style( 'block-apply-visit-request', plugin_dir_url(__FILE__) . 'template-parts/blocks/t2-apply-visit-request/apply-visit-request.css', array(), '1.0.0' );
 				wp_enqueue_script( 'block-apply-visit-request', plugin_dir_url(__FILE__) . '/template-parts/blocks/t2-apply-visit-request/apply-visit-request.js', array(), '1.0.0', true );
 			  },
