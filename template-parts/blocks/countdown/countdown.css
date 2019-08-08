@@ -1,0 +1,14 @@
+
+
+
+.flip-clock-wrapper ul li a {
+    display: block;
+}
+/*
+.editor-styles-wrapper ul {
+    list-style-type: none !important;
+}
+*/
+.acf-block-preview ul {
+    list-style-type: none !important;
+}

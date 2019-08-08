@@ -1,0 +1,61 @@
+.slider {
+	 padding: 0 0 5px;
+}
+ .slider .slides img {
+	 height: 80vh;
+	 width: auto;
+	 padding: 2vh;
+}
+
+/* Style for the backend */
+ .slider.is-admin:before { /* this is to make the block contenet clickable/slideable */
+	 display: block;
+	 content: "";
+	 top: 0;
+	 left: 0;
+	 right: 0;
+	 bottom: 40px;
+	 position: absolute;
+	 z-index: 1;
+}
+
+.slider.is-admin .testimonial-blockquote {
+	min-width: 400px; 
+    top: calc(50% - 30px) !important;
+}
+/* END Style for the backend */
+
+#editor .slick-list {
+    min-height: 300px;
+    padding: 80px 50px;
+}
+.testimonial-inner {
+    padding: 20px;
+    border-left: 2px solid !important;
+}
+.slides .testimonial-blockquote {
+    border-left: 0px solid !important;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 9px 7px 7px 1px #0000008a;
+    font-size: calc(12px + 1.1vw);
+    word-wrap: break-word; 
+    position: absolute;top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    line-height: 1.2;background: #ffffff9e;
+}
+
+@media only screen and (max-width: 1200px) {
+  .slides .testimonial-blockquote {
+    width: 100%;
+    max-width: 500px;
+}
+}
+
+@media only screen and (max-width: 800px) {
+  .slides .testimonial-blockquote {
+    width: 100%;
+    max-width: 300px;
+}
+}
