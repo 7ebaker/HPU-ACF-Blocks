@@ -1,0 +1,290 @@
+body {
+    font: 16px/1.2 'Poppins',sans-serif;
+    background: #fefeff;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    color: #45454a;
+    min-width: 320px;
+    max-width: 2500px;
+    margin: 0 auto;
+    width: 100%;
+}
+ul {
+    list-style: none;
+}
+.apply-visit-request {
+    padding: 90px 0;
+}
+.apply-visit-request .avr-col__cta {
+    margin-top: auto;
+}
+.apply-visit-request .avr-col__cta a, .campus-map .link-holder a, .category-listing .load-more a, .countdown__cta a, .faculty-staff__link a, .form-base .wpcf7-submit, .graduate-study__button-link a, .h-tabs-module .ha-content-btn a, .program-block .pb-cta a, .related-events .link-holder a, .related-news .link-holder a, .schools-colleges__cta a, .services-resources .sr-cta a, .tickets__cta a, .whats-happening .top-section__buttons a, .wrapper .gform_wrapper .gform_footer .gform_button {
+    padding: 17px 20px;
+    display: inline-block;
+    border: 1px solid #330072;
+    text-transform: uppercase;
+    color: #330072;
+    font: 700 16px/1.2 'Bitter',sans-serif;
+    -webkit-transition: color .2s,background-color .2s;
+    -o-transition: color .2s,background-color .2s;
+    transition: color .2s,background-color .2s;
+    text-align: center;
+}
+a {
+    text-decoration: none !important;
+    background: 0 0;
+}
+
+.apply-visit-request .avr-col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.apply-visit-request .avr-col__title {
+    font: 700 30px 'Bitter',Serif;
+    margin-bottom: 10px;
+    color: #330072;
+}
+
+.apply-visit-request .avr-col__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.page-frame, .wrapper .gform_wrapper form, body.search .site-content, body[class*=error] .frame[role=main], div.mapsvg-controller-view div.mapsvg-controller-view-toolbar, div.mapsvg-controller-view-content {
+    max-width: 1480px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 40px;
+    width: 100%;
+}
+
+.apply-visit-request .avr-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-right: -30px;
+}
+
+
+.apply-visit-request {
+    padding: 45px 0;
+    }
+    .page-frame, .wrapper .gform_wrapper form, .wysiwyg-frame, body.search .site-content, body[class*=error] .frame[role=main], div.mapsvg-controller-view div.mapsvg-controller-view-toolbar, div.mapsvg-controller-view-content {
+    padding: 0 20px;
+}
+    .apply-visit-request .avr-col {
+    margin-bottom: 35px;
+}
+    .apply-visit-request .avr-col {
+    -ms-flex-preferred-size: calc(100%/3 - 60px);
+    flex-basis: calc(100%/3 - 60px);
+    max-width: calc(100%/3 - 60px);
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 28px;
+}
+
+.apply-visit-request .avr-col__cta a:hover, .campus-map .link-holder a:hover, .category-listing .load-more a:hover, .countdown__cta a:hover, .faculty-staff__link a:hover, .form-base .wpcf7-submit:hover, .graduate-study__button-link a:hover, .h-tabs-module .ha-content-btn a:hover, .hero-bottom .call-outs .post__link a:hover, .program-block .pb-cta a:hover, .related-events .link-holder a:hover, .related-news .link-holder a:hover, .schools-colleges__cta a:hover, .services-resources .sr-cta a:hover, .tickets__cta a:hover, .whats-happening .top-section__buttons a:hover, .wrapper .gform_wrapper .gform_footer .gform_button:hover {
+    background: #330072;
+    color: #fff;
+}
+
+
+/* The Modal */
+/*
+body {
+	 background-color: #fbfbfb;
+}
+ body.hide-overflow {
+	 overflow: hidden;
+}
+ .mhc-intro-modal {
+	 position: fixed;
+	 left: 0;
+	 top: 0;
+	 height: 100%;
+	 width: 100%;
+	 background-color: rgba(21, 21, 21, 0.55);
+	 opacity: 0;
+	 visibility: hidden;
+	 transition: opacity 0.3s 0s, visibility 0s 0.3s;
+}
+ .mhc-intro-modal.is-visible {
+	 opacity: 1;
+	 visibility: visible;
+	 z-index: 11;
+	 transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+*/
+:not.is-admin .avr-popup__frame {
+    position: fixed;
+    z-index: 101;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+    padding-right: 0;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+.avr-popup {
+    width: 100%;
+    background-color: #330072;
+    padding: 70px 30px 20px 20px;
+    position: relative;
+    margin-left: auto;
+    pointer-events: all;
+}
+.avr-popup__inner, .avr-popup__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.avr-popup__title {
+    color: #fff;
+    font: 700 30px 'Bitter',Serif;
+}
+.avr-popup__link.is-mobile {
+    padding-top: 0;
+    margin-left: auto;
+}
+.avr-popup__link {
+    text-align: right;
+    padding-top: 20px;
+}
+.avr-popup__link a {
+    color: #fff;
+    font-size: 12px;
+    line-height: 11px;
+    text-decoration: underline;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+.avr-popup__links {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.avr-popup__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.avr-popup__links li:not(:last-child) {
+    margin-right: 30px;
+}
+.avr-popup__links a.apply-btn, .avr-popup__links a:hover {
+    background-color: #d93c0d;
+    border-color: #d93c0d;
+}
+.avr-popup__links a {
+    display: inline-block;
+    font: 700 16px 'Bitter',Serif;
+    text-transform: uppercase;
+    color: #fff !important;
+    padding: 3px 17px 5px;
+    border: 1px solid #fff;
+    width: 100%;
+    text-align: center;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+a {
+    text-decoration: none;
+    background: 0 0;
+}
+.avr-popup__close {
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    color: #fff !important;
+    font-size: 0;
+    width: 21px;
+    height: 21px;
+    background-color: #330072;
+}
+.avr-popup__close:before {
+    -webkit-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+.avr-popup__close:after, .avr-popup__close:before {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 23px;
+    background-color: currentColor;
+    position: absolute;
+    left: 10px;
+    top: 0;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+.avr-popup__close:after {
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+.avr-popup__close:after, .avr-popup__close:before {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 23px;
+    background-color: currentColor;
+    position: absolute;
+    left: 10px;
+    top: 0;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+.avr-popup__link {
+    text-align: right;
+    padding-top: 20px;
+}
+.avr-popup__link a {
+    color: #fff !important;
+    font-size: 12px;
+    line-height: 11px;
+    text-decoration: underline;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+@media screen and (min-width: 1025px) {
+.avr-popup {
+    max-width: 930px;
+}
+    .avr-popup__inner {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+    .avr-popup__title {
+    margin-right: 30px;
+}
+    .avr-popup__links {
+    margin-left: auto !important;
+}
+    }
+
+
+@media screen and (min-width: 768px) {
+.avr-popup__link.is-mobile {
+    display: none;
+}
+    }

@@ -76,19 +76,34 @@ $group_popup = get_field('popup');
         
 	<?php elseif( get_field('template') == 'Popup' ): ?> <!--If this template is popup -->
 
-	Modal
 <!-- The Modal -->
-<div id="myModal" class="modal">
+<div class="avr-popup__frame js-avr-popup page-frame mhc-modal mhc-intro-modal" data-show="100">
+                <div class="avr-popup">
+                    <div class="avr-popup__inner mhc-modal-inner">
+                        <div class="avr-popup__group mhc-modal-info-container">
+                                                            <div class="avr-popup__title"><?php echo $group_popup['popup_title']; ?></div>
+                                                                                        <div class="avr-popup__link is-mobile">
+                                    <a class="js-close-cookie" href="#"><?php echo $group_popup['dont_show_again']; ?></a>
+                                </div>
+                                                    </div>
 
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
-  </div>
+                        <ul class="avr-popup__links">
+                                                            <li><a class="apply-btn" href="<?php echo $group_popup['apply_button']['url']; ?>" target="_blank"><?php echo $group_popup['apply_button']['title']; ?></a></li>
+                            
+                                                            <li><a href="<?php echo $group_popup['visit_button']['url']; ?>" target="_blank"><?php echo $group_popup['visit_button']['title']; ?></a></li>
+                            
+                                                            <li><a href="<?php echo $group_popup['request_button']['url']; ?>" target="_blank"><?php echo $group_popup['request_button']['title']; ?></a></li>
+                                                    </ul>
+                    </div>
+                    <a class="avr-popup__close js-avr-popup-close mhc-intro-modal-close" title="Close" href="#0">Close</a>
+                                            <div class="avr-popup__link is-desktop">
+                            <a class="js-close-cookie" href="#"><?php echo $group_popup['dont_show_again']; ?></a>
+                        </div>
+                                    </div>
+            </div>
 
-</div>
 	
-	<?php endif; ?><!--If this template is popup -->
+	<?php endif; ?><!--End of If this template is block or popup -->
 	<?php else: ?>
 		<p>Please add some content to the Apply, Visit, Request Block.</p>
 	<?php endif; ?>

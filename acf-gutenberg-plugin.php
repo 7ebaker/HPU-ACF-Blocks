@@ -87,7 +87,7 @@ function my_acf_register_blocks() {
 				wp_enqueue_script( 'block-visits', plugin_dir_url(__FILE__) . '/template-parts/blocks/t3-visits/visits.js', array(), '1.0.0', true );
 			  },
         ));*/
-        // Register a t3 Visits block.
+        // Register a t2 Visits block.
         acf_register_block_type(array(
             'name'              => 'apply-visit-request',
             'title'             => __('T2 Apply Visit Request Block'),
@@ -98,7 +98,7 @@ function my_acf_register_blocks() {
 			'icon' 				=> 'smiley',
 			'align'				=> 'wide',
 			'enqueue_assets' 	=> function(){                
-				wp_enqueue_style( 'block-apply-visit-request', plugin_dir_url(__FILE__) . 'template-parts/blocks/t2-apply-visit-request/apply-visit-request.css', array(), '1.0.0' );
+				wp_enqueue_style( 'block-apply-visit-request', plugin_dir_url(__FILE__) . 'template-parts/blocks/t2-apply-visit-request/apply-visit-request2.css', array(), 'null' );
 				wp_enqueue_script( 'block-apply-visit-request', plugin_dir_url(__FILE__) . '/template-parts/blocks/t2-apply-visit-request/apply-visit-request.js', array(), '1.0.0', true );
 			  },
         ));

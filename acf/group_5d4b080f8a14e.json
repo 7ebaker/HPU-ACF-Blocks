@@ -304,6 +304,131 @@
                     "prepend": "",
                     "append": "",
                     "maxlength": ""
+                },
+                {
+                    "key": "field_5d4c672738c94",
+                    "label": "Don't show link",
+                    "name": "dont_show_again",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5d4b24a2e8cec",
+                                "operator": "==",
+                                "value": "Popup"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5d4c67ba38c95",
+                    "label": "Hide popup after x pixels",
+                    "name": "hide_popup_pixels",
+                    "type": "number",
+                    "instructions": "If users scroll above that number of pixels the module must be hidden.",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5d4b24a2e8cec",
+                                "operator": "==",
+                                "value": "Popup"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "min": "",
+                    "max": "",
+                    "step": ""
+                },
+                {
+                    "key": "field_5d4c683138c96",
+                    "label": "Apply Button",
+                    "name": "apply_button",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5d4b24a2e8cec",
+                                "operator": "==",
+                                "value": "Popup"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                },
+                {
+                    "key": "field_5d4c685938c97",
+                    "label": "Visit Button",
+                    "name": "visit_button",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5d4b24a2e8cec",
+                                "operator": "==",
+                                "value": "Popup"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                },
+                {
+                    "key": "field_5d4c688438c98",
+                    "label": "Request Button",
+                    "name": "request_button",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5d4b24a2e8cec",
+                                "operator": "==",
+                                "value": "Popup"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
                 }
             ]
         }
@@ -325,5 +450,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1565210269
+    "modified": 1565288684
 }
