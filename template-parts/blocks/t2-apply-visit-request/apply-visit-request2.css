@@ -101,23 +101,26 @@ a {
 
 
 /* The Modal */
-/*
+
 body {
-	 background-color: #fbfbfb;
+	 /* background-color: #fbfbfb; */
 }
  body.hide-overflow {
 	 overflow: hidden;
 }
  .mhc-intro-modal {
+     /*
 	 position: fixed;
 	 left: 0;
 	 top: 0;
 	 height: 100%;
 	 width: 100%;
-	 background-color: rgba(21, 21, 21, 0.55);
+	 background-color: rgba(21, 21, 21, 0.55); 
+     */
 	 opacity: 0;
 	 visibility: hidden;
 	 transition: opacity 0.3s 0s, visibility 0s 0.3s;
+     
 }
  .mhc-intro-modal.is-visible {
 	 opacity: 1;
@@ -125,9 +128,21 @@ body {
 	 z-index: 11;
 	 transition: opacity 0.3s 0s, visibility 0s 0s;
 }
-*/
-:not.is-admin .avr-popup__frame {
+
+.avr-popup__frame {
     position: fixed;
+    z-index: 101;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+    padding-right: 0;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+.editor-styles-wrapper .avr-popup__frame {
+    position: relative;
     z-index: 101;
     width: 100%;
     bottom: 0;
